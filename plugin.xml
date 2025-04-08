@@ -6,8 +6,8 @@
     <description>An Android Cordova plugin that allows users to display simple Toast messages at the bottom of the screen.</description>
     <license>MIT</license>
     <keywords>cordova,android,toast,message,alert</keywords>
-    <repo>https://github.com/stanidesis/pluginos/Toast-PhoneGap-Plugin.git</repo>
-    <issue>https://github.com/stanidesis/pluginos/issues</issue>
+    <repo>https://github.com/jcvaldess/pluginos/Toast-PhoneGap-Plugin.git</repo>
+    <issue>https://github.com/jcvaldess/pluginos/issues</issue>
     <engines>
         <engine name="cordova" version=">=3.0.0"/>
     </engines>
@@ -17,9 +17,9 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="PluginOS">
-                <param name="android-package" value="com.stanleyidesis.cordova.plugin.PluginOS"/>
+                <param name="android-package" value="com.jcvaldess.cordova.plugin.PluginOS"/>
             </feature>
         </config-file>
-        <source-file src="src/android/PluginOS.java" target-dir="src/com/stanleyidesis/cordova/plugin" />
+        <source-file src="src/android/PluginOS.java" target-dir="src/com/jcvaldess/cordova/plugin" />
     </platform>
 </plugin>
