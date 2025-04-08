@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/stanidesis/pluginos.git"
+    "url": "git+https://github.com/jcvaldess/pluginos.git"
   },
   "keywords": [
     "Toast",
@@ -29,7 +29,7 @@
   "author": "Julio Valdes <jc.martindelcampo@mavi.mx>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/stanidesis/pluginos/issues"
+    "url": "https://github.com/jcvaldess/pluginos/issues"
   },
-  "homepage": "https://github.com/stanidesis/pluginos/"
+  "homepage": "https://github.com/jcvaldess/pluginos/"
 }
