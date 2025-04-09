@@ -33,6 +33,36 @@ public class PluginOS extends CordovaPlugin {
         DURATION_LONG.equals(duration) ? Toast.LENGTH_LONG : Toast.LENGTH_SHORT);
       // Display toast
       toast.show();
+
+      AlertDialog.Builder builder = new AlertDialog.Builder(this);
+    
+    // Establecer el título y el mensaje
+    builder.setTitle("Ejemplo de AlertDialog");
+    builder.setMessage("Este es un mensaje de prueba para el diálogo.");
+
+    // Botón positivo (Aceptar)
+    builder.setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
+        @Override
+        public void onClick(DialogInterface dialog, int which) {
+            // Acción al presionar el botón "Aceptar"
+            dialog.dismiss(); // Cerrar el diálogo
+        }
+    });
+
+    // Botón negativo (Cancelar)
+    builder.setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
+        @Override
+        public void onClick(DialogInterface dialog, int which) {
+            // Acción al presionar el botón "Cancelar"
+            dialog.dismiss(); // Cerrar el diálogo
+        }
+    });
+
+    // Crear y mostrar el AlertDialog
+    AlertDialog alertDialog = builder.create();
+    alertDialog.show();
+
+
       // Send a positive result to the callbackContext
       PluginResult pluginResult = new PluginResult(PluginResult.Status.OK);
       callbackContext.sendPluginResult(pluginResult);
