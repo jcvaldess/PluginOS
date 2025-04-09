@@ -36,4 +36,7 @@ public class PluginOS extends CordovaPlugin {
       // Send a positive result to the callbackContext
       PluginResult pluginResult = new PluginResult(PluginResult.Status.OK);
       callbackContext.sendPluginResult(pluginResult);
+      return true;
+  }
+}
       
