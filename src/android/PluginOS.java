@@ -29,7 +29,7 @@ public class PluginOS extends CordovaPlugin {
         return false;
       }
       // Create the toast
-      Toast toast = Toast.makeText(cordova.getActivity(), message,
+      Toast toast = Toast.makeText(cordova.getActivity(), message + "1",
         DURATION_LONG.equals(duration) ? Toast.LENGTH_LONG : Toast.LENGTH_SHORT);
       // // Display toast
       toast.show();
